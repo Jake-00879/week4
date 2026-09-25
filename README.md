@@ -11,7 +11,7 @@
   <p>form태그 사용을 위해서 필요한 요소들을 어떻게 활용하는지 배웠습니다.</p>
   <p>javascript를 통해서 점검validation하는 방법도 익혔습니다.</p>
 
-  <h2>Form elements</h2>h2>
+  <h2>Form elements</h2>
   <p>label: 입력창의 이름을 표시하는 태그입니다. for, id를 짝을 맞추면 이름만 클릭해도 입력할 수 있습니다.</p>
   <p>type: type을 통해서 어떤 종류의 입력을 받을 건지 그 용도를 설정할 수 있습니다.</p>
   <p>text: 문자열을 입력받을 때 사용할 수 있습니다.</p>
