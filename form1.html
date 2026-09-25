@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.104.2">
+        <title>기본페이지</title>
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+
+
+
+
+
+        <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+        <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+        <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+        <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+        <meta name="theme-color" content="#712cf9">
+    </head>
+    <style>
+        .header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header img {
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        .header h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .main {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        .col label {
+            display: block;
+            font-weight: 500;
+        }
+
+        .col input {
+            width: 100%;
+            padding: 8px 8px;
+            border: 1px solid;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" width="100" alt="이미지 설정">
+        <h2>Checkout form</h2>
+        <p>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a
+            validation state that can be triggered by attempting to submit the form without completing it.</p>
+    </header>
+    <div class="main">
+        <h3>Billing address</h3>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label for="fname">First name</label><br>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div class="col">
+                    <label for="lname">Last name</label><br>
+                    <input type="text" id="lname" name="lname">
+                </div>
+            </div>
+        </form>
+        <form>
+            <label for="uname" class="form-label">User name</label><br>
+            <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" calss="form-control" id="uname" placeholder="Username" required>
+                <div class="invalid-feedback">Your username is required. </div>
+            </div>
+        </form>
+        <form>
+            <label for="email">Email(Optional)</label><br>
+            <input type="text" id="email" placeholder="you@example.com">
+        </form>
+        <form>
+            <label for="adress">Address</label><br>
+            <input type="text" id="address" placeholder="1234 Main St">
+        </form>
+        <form>
+            <label for="adress2">Address 2(Optional)</label><br>
+            <input type="text" id="address" placeholder="Apartment or suite">
+        </form>
+        <form>
+            <label for="country">Country</label><br>
+            <select id="country" name="country">
+                <option value="Korea">Korea</option>
+            </select>
+        </form>
+        <form>
+            <label for="state">State</label><br>
+            <select id="state" name="state">
+                <option value="경기도">경기도</option>
+            </select>
+        </form>
+        <form>
+            <label for="zip">Zip</label><br>
+            <input type="text" id="zip" name="zip">
+        </form>
+        <from>
+            <input type="checkbox" id="ba" name="ba" value="address">
+            <label for="vehicle1"> Shipping address is the same as my billing address</label><br>
+            <input type="checkbox" id="si" name="si" value="information">
+            <label for="vehicle2"> Save this information for next time</label><br>
+        </from>
+        <p>Choose your favorite Web language:</p>
+
+        <form>
+            <input type="radio" id="credit" name="payment" value="credit">
+            <label for="credit">Credit card</label><br>
+            <input type="radio" id="debit" name="payment" value="debit">
+            <label for="debit">Debit card</label><br>
+            <input type="radio" id="paypal" name="payment" value="paypal">
+            <label for="paypal">Paypal</label>
+        </form>
+        <form>
+            <label for="name_card">Name on card</label><br>
+            <input type="text" id="name_card" value="name_card"><br>
+            <p>Full name as displayed on card</p>
+        </form>
+        <form>
+            <label for="credit_card">Credit card number</label><br>
+            <input type="text" id="credit_card" value="credit_card">
+        </form>
+        <form>
+            <label for="Expiration">Expiration</label><br>
+            <input type="text" id="Expiration" value="Expiration">
+        </form>
+        <form>
+            <label for="cvv">CVV</label><br>
+            <input type="text" id="cvv" value="cvv">
+        </form>
+
+        <input type="submit" value="Submit">
+    </div>
+
+    <footer class="footer">
+        <p>© 2017–2022 Company Name</p>
+        <p>Privacy Terms Support</p>
+    </footer>
+</body>
+
+</html>
