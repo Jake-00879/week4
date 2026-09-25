@@ -130,12 +130,12 @@
             border-radius: 6px;
             box-sizing: border-box;
         }
+
         .box2row2 {
             display: flex;
             width: 50%;
             gap: 10px;
         }
-        
     </style>
 </head>
 
@@ -181,6 +181,14 @@
             <div class="mb-3">
                 <label for="address2">Address 2(Optional)</label><br>
                 <input type="text" id="address2" placeholder="Apartment or suite">
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">preferred shipping date</label><br>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="mb-3">
+                <label for="notes" class="form-label">Order Notes</label><br>
+                <textarea id="notes" name="notes" rows="3" placeholder="배송 관련 요청사항을 입력하세요."></textarea>
             </div>
             <div class="cs">
                 <div class="cscol">
@@ -268,8 +276,8 @@
         const credit_card = document.querySelector("#credit_card");
         const Expiration = document.querySelector("#Expiration");
         const cvv = document.querySelector("#cvv");
-        
-        form.addEventListener("submit", function (event){
+
+        form.addEventListener("submit", function (event) {
             event.preventDefault();
 
             if (!fname.checkValidity()) {
@@ -340,7 +348,7 @@
             alert("동록이 완료되었습니다.");
         });
 
-    </script>   
+    </script>
 </body>
 
 </html>
